@@ -3,11 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Write your markup here -->
+    <header>
+      <h1>Change Calculator</h1>
+    </header>
 
-    <!-- Don't forget to add your <script> tag here -->
+    <main>
+      <div class="input-container">
+        <label>Amount Due:</label>
+          <input type="text" id="amount-due">
+        
+        <label>Amount Tendered:</label>
+          <input type="text" id="amount-received">
 
+        <button id="calculate-change">Calculate</button>
+        <button id="reset">Reset</button><br><br>
+      </div>
+
+      <div class="money-container">
+        <div class="bill-row">
+          <div class="bill-column">
+            <label for="twenties"></label>
+            <img class="bill-item" src="assets/twenty.png" alt="Twenty dollar bill">
+            <p id="twenties-output" class="bill-output"></p>
+          </div>
+          <div class="bill-column">
+            <label for="tens"></label>
+            <img class="bill-item" src="assets/ten.png" alt="Ten dollar bill">
+            <p id="tens-output" class="bill-output"></p>
+          </div>
+          <div class="bill-column">
+            <label for="fives"></label>
+            <img class="bill-item" src="assets/five.png" alt="Five dollar bill">
+            <p id="fives-output" class="bill-output"></p>
+          </div>
+          <div class="bill-column">
+            <label for="twos"></label>
+            <img class="bill-item" src="assets/two.png" alt="Two Dollar bill">
+            <p id="twos-output" class="bill-output"></p>
+          </div>
+          <div class="bill-column">
+            <label for="dollars"></label>
+            <img class="bill-item" src="assets/dollar.png" alt="One dollar bill">
+            <p id="dollars-output" class="bill-output"></p>
+          </div>
+        </div>
+
+        <div class="coin-row">
+          <div class="coin-column">
+            <label for="quarters"></label>
+            <img class="coin-item" src="assets/quarter.jpeg" alt="Quarter coin">
+            <p id="quarters-output" class="coin-output"></p>
+          </div>
+          <div class="coin-column">
+            <label for="dimes"></label>
+            <img class="coin-item" src="assets/dime.jpeg" alt="Dime coin">
+            <p id="dimes-output" class="coin-output"></p>
+          </div>
+          <div class="coin-column">
+            <label for="nickels"></label>
+            <img class="coin-item" src="assets/nickel.jpeg" alt="Nickel coin">
+            <p id="nickels-output" class="coin-output"></p>
+          </div>
+          <div class="coin-column">
+            <label for="pennies"></label>
+            <img class="coin-item" src="assets/penny.jpeg" alt="Penny coin">
+            <p id="pennies-output" class="coin-output"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <script src="main.js"></script>
+    </footer>
   </body>
 </html>
