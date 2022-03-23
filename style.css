@@ -64,7 +64,6 @@ button {
 .bill-output {
     text-align: center;
     font-size: 30px;
-    font: bolder;
 }
 
 .coin-row {
@@ -80,14 +79,14 @@ button {
 }
 
 .coin-item {
-    margin-left: 70%;
+    margin-left: 80%;
     height: 80px;
     width: 30%;
 }
 
 .coin-output {
-    margin-left: 70%;
+    margin-left: 85%;
     text-align: center;
     font-size: 30px;
-    font: bolder;
 }
+
