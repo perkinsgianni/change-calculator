@@ -12,7 +12,7 @@ let moneyDenomination = [
 ];
 
 // function that calculates change of each denomination and displays value
-function calculateChange(amountReceived, amountDue) {
+function calculateChange(amountDue, amountReceived) {
     // calculate change
     let change = amountReceived - amountDue;
 
@@ -25,6 +25,8 @@ function calculateChange(amountReceived, amountDue) {
         if ( Math.floor(change / value) > 0 ) {
             // display quotient according to corresponding denomination
             document.getElementById(`${denomination}-output`).innerHTML = Math.floor(change / value);
+        } else if ( Math.floor(change / value) < 0 ) {
+            document.getElementById(`${denomination}-output`).innerHTML = '';
         }
     // determine which denomination(s) comprise(s) change by calculating which quotient (rounded to two decimal places) has a remainder of 0
     change = (change % value).toFixed(2);
