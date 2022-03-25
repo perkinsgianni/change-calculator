@@ -12,7 +12,7 @@ let moneyDenomination = [
 ];
 
 // function that calculates change of each denomination and displays value
-function calculateChange(amountDue, amountReceived) {
+function calculateChange(amountReceived, amountDue) {
     // calculate change
     let change = amountReceived - amountDue;
 
@@ -40,7 +40,7 @@ function submitButton() {
     const amountReceived = parseFloat(document.getElementById("amount-received").value);
 
     // result of change calculation
-    let result = calculateChange(amountDue, amountReceived);
+    let result = calculateChange(amountReceived, amountDue);
 };
 
 // reset button (handle click event) function
