@@ -33,7 +33,7 @@ function calculateChange(amountReceived, amountDue) {
     }
 };
 
-// submit button (handle click event) function
+// submit button function
 function submitButton() {
     // target and assign input elements
     const amountDue = parseFloat(document.getElementById("amount-due").value);
@@ -43,7 +43,7 @@ function submitButton() {
     let result = calculateChange(amountReceived, amountDue);
 };
 
-// reset button (handle click event) function
+// reset button function
 function resetButton() {
     // clear amount due
     document.getElementById("amount-due").value = '';
@@ -64,5 +64,5 @@ function resetButton() {
 // target calculate button and set onclick method to use submitButton function
 document.getElementById("calculate-change").addEventListener("click", submitButton);
 
-// target reset button and set onclick method to use submitButton function
+// target reset button and set onclick method to use resetButton function
 document.getElementById("reset").addEventListener("click", resetButton);
