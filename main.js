@@ -49,7 +49,7 @@ function resetButton() {
     document.getElementById("amount-due").value = '';
     // clear amount received
     document.getElementById("amount-received").value = '';
-    //clear denomination output
+    // clear denomination output
     document.getElementById("twenties-output").innerHTML = '';
     document.getElementById("tens-output").innerHTML = '';
     document.getElementById("fives-output").innerHTML= '';
