@@ -17,7 +17,7 @@ function calculateChange(amountReceived, amountDue) {
     let change = amountReceived - amountDue;
 
     // iterate through properties of moneyDenomination object
-    for ( entry of moneyDenomination ) {
+    for ( let entry of moneyDenomination ) {
         // assign properties to entry variable
         let {denomination, value} = entry;
 
